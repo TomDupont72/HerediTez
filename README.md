@@ -12,6 +12,7 @@ npm create astro@latest -- --template basics
 
 ![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
 
+HerediTez est un projet permettrant de faciliter l'héritage d'une personne à l'aide de smart contracts. Le légataire fait un smart contrat avec son hértiier pour lui léguer une fraction de son wallet. L'héritier pourra claim à tout moment et laissera ainsi un délai au légataire  pour refuser ce claim s'il n'est pas décédé. Si le smart contract arrive à échéance, alors cela signifie que le légataire est décédé et le légataire reçoit son dû.
 
 ## 🚀 Project Structure
 
