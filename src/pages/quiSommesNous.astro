@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Tom from '../static/tom.jpg'
+import Vladimir from '../static/vladimir.jpg'
+import Corentin from '../static/corentin.jpg'
+import Emmanuel from '../static/emmanuel.jpg'
+---
+
+
+<BaseLayout betweenMainAndFooterClass="grow" mainClass="w-2/3 gap-56 place-content-center text-center items-center self-center mt-24 flex flex-col">
+
+
+	<div class="w-full flex flex-col text-center">
+		<h1 class="mb-10 flex text-6xl place-self-center bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-blue-500">HerediTez Team</h1>
+		<div class="flex flex-row justify-around bg-gradient-to-r from-violet-500 to-blue-500 rounded-lg border-solid border-gray-600">
+			<div class="flex flex-col m-4">
+				<img class="rounded-full h-56 w-56 self-center" src={Vladimir}/>
+				<h2 class="whitespace-nowrap">Vladimir Oliveira</h2>
+                <p class="flex border border-solid bg-blue-500 text-center rounded-full font-bold text-white p-2 self-center px-4 mt-0">CLO</p>
+			</div>
+			<div class="flex flex-col m-4">
+				<img class="rounded-full h-56 w-56 self-center" src={Emmanuel}/>
+				<h2 class="whitespace-nowrap">Emmanuel Couka</h2>
+                <p class="flex border border-solid bg-blue-500 text-center rounded-full font-bold text-white p-2 self-center px-4 mt-0">CMO</p>
+			</div>
+			<div class="flex flex-col m-4">
+				<img class="rounded-full h-56 w-56 self-center" src={Tom}/>
+				<h2 class="whitespace-nowrap">Tom Dupont</h2>
+                <p class="flex border border-solid bg-blue-500 text-center rounded-full font-bold text-white p-2 self-center px-4 mt-0">CTO</p>
+			</div>
+			<div class="flex flex-col m-4">
+				<img class="rounded-full h-56 w-56 self-center" src={Corentin}/>
+				<h2 class="whitespace-nowrap">Corentin Oudjani</h2>
+                <p class="flex border border-solid bg-blue-500 text-center rounded-full font-bold text-white p-2 self-center px-4 mt-0">CEO</p>
+			</div>
+		</div>
+	</div>
+
+</BaseLayout>

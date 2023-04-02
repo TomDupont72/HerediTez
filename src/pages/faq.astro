@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Arthur from '../static/arthur.jpg'
+import Jb from '../static/jb.jpg'
+import Haga from '../static/haga.jpg'
+import Luka from '../static/luka.jpg'
+import Matteo from '../static/matteo.jpg'
+---
+
+
+<BaseLayout betweenMainAndFooterClass="grow" mainClass="w-2/3 gap-56 place-content-center text-center items-center self-center mt-24 flex flex-col">
+	<div class="flex flex-col w-full items-center gap-4 mb-24">
+		<h1 class="text-left w-full text-5xl mb-0">FAQ</h1>
+
+
+
+
+		<details class="bg-opacity-30 bg-violet-300 w-[100%] border border-solid rounded-full border-violet-900 list-none cursor-pointer hover:-translate-y-1 hover:scale-105 ease-in-out duration-300">
+			<summary class="items-center flex font-bold list-none" id="chevron">
+				<h2 class="ml-8">Comment fonctionne notre solution ?</h2>
+				<div class="grow"></div>
+				<p class="text-3xl hidden open:visible mr-8">-</p>
+			</summary>
+
+			<p class="flex m-8 text-justify">
+				Notre solution fonctionne à base de smart contracts. Le légataire fait un smart contrat avec son hértiier pour lui léguer une fraction de son wallet. L'héritier pourra claim à tout moment et laissera ainsi un délai au légataire  pour refuser ce claim s'il n'est pas décédé. Si le smart contract arrive à échéance, alors cela signifie que le légataire est décédé et le légataire reçoit son dû.
+			</p>
+		</details>
+
+
+        		<details class="bg-opacity-30 bg-violet-300 w-[100%] border border-solid rounded-full border-violet-900 list-none cursor-pointer hover:-translate-y-1 hover:scale-105 ease-in-out duration-300">
+			<summary class="items-center flex font-bold list-none" id="chevron">
+				<h2 class="ml-8">Quels sont les avantages de notre solution ?</h2>
+				<div class="grow"></div>
+				<p class="text-3xl hidden open:visible mr-8">-</p>
+			</summary>
+
+			<p class="flex m-8 text-justify">
+				Notre solution permet aux personnes possédant un wallet de cryptomonnaies, de léguer des fractions de celui-ci au lieu qu'il soit perdu. Elle permet aussi au légataire de gérer son héritage comme il le souhaite et ainsi d'éviter des conflits entre les membres de la famille du défunt.
+			</p>
+		</details>
+		
+		<details class="bg-opacity-30 bg-violet-300 w-[100%] border border-solid rounded-full border-violet-900 list-none cursor-pointer hover:-translate-y-1 hover:scale-105 ease-in-out duration-300">
+			<summary class="items-center flex font-bold list-none" id="chevron">
+				<h2 class="ml-8">Est-ce que notre méthode est encadrée légalement ?</h2>
+				<div class="grow"></div>
+				<p class="text-3xl hidden open:visible mr-8">-</p>
+			</summary>
+
+			<p class="flex m-8 text-justify">
+				Oui, notre solution est entièrement légrale. Elle a été conçue et pensée entourée de nombreux notaires afin de respecter entièrement la législation française et ainsi de vous permettre d'hériter en tout sereinité.
+			</p>
+		</details>
+
+	</div>
+
+</BaseLayout>

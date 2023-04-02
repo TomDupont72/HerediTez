@@ -1,0 +1,19 @@
+{
+  "name": "afraid-astronaut",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^3.1.1",
+    "astro": "^2.1.9",
+    "nvm": "0.0.4",
+    "tailwindcss": "^3.3.1",
+    "yarn": "^1.22.19"
+  }
+}

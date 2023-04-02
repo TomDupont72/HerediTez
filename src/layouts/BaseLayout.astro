@@ -1,0 +1,37 @@
+---
+import Header from '../components/Header/Header.astro';
+import Footer from '../components/Footer.astro';
+const {mainClass, betweenMainAndFooterClass} = Astro.props;
+const navaClass = "2xl:hidden no-underline text-5xl text-white font-bold m-4 p-2 h-24 flex items-center place-content-center bg-cyan-900 rounded-lg border-solid border-2 border-[#00ffff]";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>IaIaEau</title>
+	</head>
+	<body class="flex flex-col dark:bg-[#070929] bg-[#fefde9] left-0 dark:text-white m-0 min-h-screen font-mono w-full">
+
+        <nav id="mySidepanel" class="w-[100%] flex-col dark:bg-[#070929] bg-white top-0 bottom-0 hidden fixed z-50 border-2 border-r border-l-0 border-b-0 border-t-0 border-solid border-[#00ffff]">
+			<a class={"2xl:hidden no-underline text-5xl text-white font-bold m-4 p-2 h-24 flex items-center place-content-center bg-red-900 rounded-lg mb-16"} href="javascript:void(0)" onclick="closeNav()">Close menu X</a>	
+            <a class={navaClass} href="/">Home</a>
+            <a class={navaClass} href="/biodiversite">Biodiversité</a>
+            <a class={navaClass} href="/niveauEau">Niveau de l'eau</a>
+            <a class={navaClass} href="/qualiteEau">Qualité de l'eau</a>
+			<a class={navaClass} href="/pourAllerPlusLoin">Pour aller plus loin</a>
+        </nav>
+
+		<Header headerclass="flex flex-row w-full bg-gradient-to-r from-blue-900 to-purple-700 border-b border-solid border-zinc-600 border-t-0 border-r-0 border-l-0 fixed"/>
+
+		<main class={mainClass}>
+            <slot/>
+		</main>
+
+		<div class={betweenMainAndFooterClass}></div>
+
+        <Footer footerclass="flex flex-col w-full place-items-center bg-[#201c41] border-t border-solid border-zinc-600 border-b-0 border-r-0 border-l-0"/>
+	</body>
+</html>

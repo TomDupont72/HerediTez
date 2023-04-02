@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+
+<BaseLayout betweenMainAndFooterClass="grow" mainClass="w-4/5 gap-1 place-content-center text-center items-center self-center mt-24 flex flex-col">
+
+	
+    <a class="self-start bg-violet-600 text-white rounded-full text-2xl p-4 cursor-pointer hover:scale-110 duration-300 ease-in-out no-underline" href="app">Wallet connected</a> 
+    
+    <div class="flex flex-row w-full gap-x-16">
+
+        <div class="flex flex-col w-full mt-0">
+            <p class="text-3xl font-bold bg-purple-800 w-[95%] p-4 rounded-lg text-white">Mon testament</p>
+            <p class="place-self-start text-xl font-bold text-dark mt-0">Ma balance = 100 000 Tez</p>
+            <p class="mt-6 place-self-start text-2xl text-center self-center font-bold text-dark text-violet-600">Mes héritiers</p>
+            <div class="flex flex-row">
+                <p class="place-self-start text-xl font-bold text-dark mt-0 whitespace-nowrap mb-0">tz1a3E789GHJK6... | 30% | claim 60 jours</p>
+                <a class="ml-4 self-center text-l font-bold bg-red-600 p-2 px-4 rounded-lg text-white mt-0 cursor-pointer hover:scale-110 duration-300 ease-in-out whitespace-nowrap" href="/app2">X Refuse | (6 day pending) X</a>
+            </div>
+            <p class="place-self-start text-xl font-bold text-dark mt-0 whitespace-nowrap mb-0">tz16G8RCGHJ45ZH... | 20% | claim 120 jours</p>
+            <p class="mt-6 place-self-start text-2xl text-center self-center font-bold text-dark text-violet-600">Ajouter un héritier</p>
+
+            <div class="flex flex-row gap-2">
+                <input placeholder="Adresse tz" class="self-center text-xl font-bold bg- w-[95%] p-4 rounded-lg text-dark text-opacity-30">
+                <input placeholder="Montant % (tez)" class="self-center text-xl font-bold bg- w-[95%] p-4 rounded-lg text-dark text-opacity-30">
+                <input placeholder="Délai (jours)" class="self-center text-xl font-bold bg- w-[95%] p-4 rounded-lg text-dark text-opacity-30">
+
+            </div>
+
+            <a class="self-center text-3xl font-bold bg-purple-800 w-[%] p-2 rounded-lg text-white no-underline hover:scale-110 ease-in-out duration-300 m-6" href="/app1">Ajouter</a>
+
+        </div>
+
+
+        <div class="flex flex-col w-full">
+            <p class="self-center text-3xl font-bold bg-purple-800 w-[95%] p-4 rounded-lg text-white">Claim</p>
+            <div class="flex flex-row items-center place-content-center w-full gap-8">
+                <p class="place-self-start text-xl font-bold text-dark mt-0 whitespace-nowrap">tz1a3E789GHJK6... | 30 000 tez</p>
+                <p class="self-center text-l font-bold bg-purple-800 p-2 px-4 rounded-lg text-white mt-0 cursor-pointer hover:scale-110 duration-300 ease-in-out whitespace-nowrap">Claim !</p>
+            </div>
+
+            <div class="flex flex-row items-center place-content-center w-full gap-8">
+                <p class="place-self-start text-xl font-bold text-dark mt-0 whitespace-nowrap">tz1654JGJC8C... | 1000 tez</p>
+                <p class="self-center text-l font-bold bg-purple-800 p-2 px-4 rounded-lg text-white mt-0 cursor-pointer hover:scale-110 duration-300 ease-in-out whitespace-nowrap">Claim !</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</BaseLayout>
